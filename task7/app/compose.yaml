@@ -1,0 +1,17 @@
+services:
+  app-1:
+    build: .
+    environment:
+      APP_NAME: app-1
+    networks:
+      - task7-network
+
+  app-2:
+    build: .
+    environment:
+      APP_NAME: app-2
+    networks:
+      - task7-network
+
+networks:
+  task7-network:
