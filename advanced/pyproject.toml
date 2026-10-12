@@ -1,0 +1,19 @@
+[project]
+name = "local-chat-bot-proj"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Volodymyr Materynskyi", email = "volodymyr2126@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "openai>=3.29.0",
+    "streamlit>=1.65.0",
+]
+
+[project.scripts]
+local-chat-bot-proj = "local_chat_bot_proj:main"
+
+[build-system]
+requires = ["uv_build>=0.12.22,<0.13.0"]
+build-backend = "uv_build"

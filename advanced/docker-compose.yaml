@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8050:8050"
+    models:
+      chatbot:
+        endpoint_var: MODEL_URL
+        model_var: MODEL_NAME
+
+models:
+  chatbot:
+    model: ai/llama3.2
